@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly HTML5 website example with accessibility and SEO best practices.">
+  <title>Accessible & SEO-Friendly HTML5 Page</title>
+
+  <!-- Accessibility and usability -->
+  <meta name="theme-color" content="#0044cc">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 1em;
+    }
+    nav a {
+      margin-right: 1em;
+      text-decoration: none;
+      color: #0044cc;
+    }
+    nav a:focus, nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    article {
+      flex: 3;
+      min-width: 200px;
+    }
+    aside {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 1rem;
+      min-width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Site Header -->
+  <header role="banner">
+    <h1>My First Awesome HTML Website</h1>
+    <p>Building with accessibility & SEO in mind</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main id="home" role="main">
+    <section class="content">
+
+      <article>
+        <header>
+          <h2 id="about">About This Page</h2>
+        </header>
+        <p>
+          This is a simple HTML5 layout that demonstrates how to use semantic tags,
+          improve accessibility, and follow basic SEO guidelines.
+        </p>
+        <figure>
+          <img src="example.jpg" alt="A visually appealing example webpage design" width="100%">
+          <figcaption>Sample design showcasing HTML5 structure.</figcaption>
+        </figure>
+      </article>
+
+      <!-- Sidebar Content -->
+      <aside aria-label="Helpful resources">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">Learn HTML</a></li>
+          <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">Web Accessibility Guidelines</a></li>
+          <li><a href="https://web.dev/seo/" target="_blank" rel="noopener">SEO Basics</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Another Content Section -->
+    <section>
+      <h2 id="articles">Latest Articles</h2>
+      <article>
+        <h3>Why Accessibility Matters</h3>
+        <p>Making your website accessible ensures everyone can use it, including people with disabilities.</p>
+        <a href="article-accessibility.html">Read more about accessibility</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 My Skills Test page</p>
+    <p>
+      Contact: <a href="mailto:nandwashady94@gmail.com">nandwashady94@gmail.com</a>
+    </p>
+  </footer>
+</body>
+</html>
